@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>추~천~추~천~~</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+    <script> new WOW().init(); </script>
+    <style>
+      .header img {
+        opacity: 0.3; /* Adjust the opacity value (0.0 to 1.0) to make the image more transparent */
+
+      }
+
+      .header .navbar img {
+        opacity: 1;
+      }
+    </style>
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="navbar">
+        <div class="logo">
+          <h3>로또</h3>
+        </div>
+        {% for num in suggested_num %}
+        <h2>{{ num }}</h2>
+        {% endfor %}
+        <h1>당첨되면 메로나</h1>
+            <img src="../static/img/merona.jpeg" alt="IWANTIT">
+
+      </div>
+      <img src="../static/img/money.jpeg" alt=""> <!-- External image from the first code -->
+    </div>
+
+    <!-- about-me -->
+    <div class="about-me">
+      <div class="about-me-intero wow fadeIn  data-wow-duration="0s" data-wow-delay="0s"">
+        <!-- Content goes here -->
+      </div>
+      <div class="about-me-block col-md-5">
+        <!-- Content goes here -->
+      </div>
+    </div>
+
+    <!-- contact-us -->
+    <!-- Add your contact-us section here -->
+
+    <!-- footer -->
+    <!-- Add your footer section here -->
+
+    <!-- <div class="goTop"><i class="fa fa-arrow-up" aria-hidden="true"></i></div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/mainscript.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!--index.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MAIN</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+          <!--<img class="card-img-top" src=".../100px180/" alt="Card image cap">-->
+          <div class="card-body">
+            <h1 class="card-title">관수's Lotto CheatSheet </h1>
+
+            <h3 class="card-title">오늘은 {{today_}}</h1>
+            <h3 class="card-text">이번에 받은 로또 번호의 발표 일은 {{satur}}</h5>
+            <a href="/show_num" class="btn btn-primary">번호 받기</a>
+
+          </div>
+        <br>
+        <a href="/info">업데이트</a>
+
+</body>
+</html>
